@@ -1,0 +1,143 @@
+/* Basic page styling */
+body {
+  font-family: Arial, sans-serif; /* Sets readable font */
+  background: #f4f6f8;            /* Light background */
+  margin: 0;                      /* Remove default margin */
+  padding: 20px;                  /* Space around content */
+}
+
+/* Center container */
+.container {
+  max-width: 900px;               /* Limit width */
+  margin: auto;                   /* Center horizontally */
+  background: #fff;               /* White background */
+  padding: 20px;                  /* Inner spacing */
+  border-radius: 10px;            /* Rounded corners */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08); /* Soft shadow */
+}
+
+/* Headings */
+h1, h2 {
+  margin-top: 0;
+}
+
+/* Form layout */
+form {
+  margin-bottom: 20px;
+}
+
+/* Two-column row */
+.form-row {
+  display: flex;                  /* Place items side-by-side */
+  gap: 15px;                      /* Space between columns */
+  margin-bottom: 12px;
+}
+
+/* Input group */
+.form-group {
+  flex: 1;                        /* Each group takes equal width */
+  display: flex;
+  flex-direction: column;         /* Label above input */
+}
+
+/* Labels */
+label {
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+/* Inputs */
+input {
+  padding: 10px;
+  border: 1px solid #cfd8dc;
+  border-radius: 6px;
+  outline: none;
+}
+
+/* Focus effect (when user clicks input) */
+input:focus {
+  border-color: #1976d2;
+}
+
+/* Buttons row */
+.button-row {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+/* Main button */
+button {
+  padding: 10px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background: #1976d2;
+  color: white;
+  font-weight: bold;
+}
+
+/* Secondary button style */
+button.secondary {
+  background: #607d8b;
+}
+
+/* Disabled button style */
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Search box */
+.search-box {
+  margin: 10px 0 20px;
+}
+
+/* Table wrapper for horizontal scrolling on small screens */
+.table-wrap {
+  overflow-x: auto;
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Table headers and cells */
+th, td {
+  border-bottom: 1px solid #e0e0e0;
+  padding: 10px;
+  text-align: left;
+}
+
+/* Header style */
+th {
+  background: #f1f5f9;
+}
+
+/* Action buttons inside table */
+.action-btn {
+  padding: 6px 10px;
+  border-radius: 6px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-right: 6px;
+}
+
+/* Edit button */
+.edit-btn {
+  background: #388e3c;
+}
+
+/* Delete button */
+.delete-btn {
+  background: #d32f2f;
+}
+
+/* Message text */
+#message {
+  margin-top: 10px;
+  font-weight: bold;
+}

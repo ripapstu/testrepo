@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Management System</title>
+
+  <!-- Link external CSS file -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Main container -->
+  <div class="container">
+
+    <!-- Title -->
+    <h1>Student Management System</h1>
+
+    <!-- Form section -->
+    <form id="studentForm">
+      <!-- Hidden input to store student id while editing -->
+      <input type="hidden" id="studentId" />
+
+      <div class="form-row">
+        <!-- Student Name -->
+        <div class="form-group">
+          <label for="name">Student Name</label>
+          <input type="text" id="name" placeholder="Enter name" required />
+        </div>
+
+        <!-- Student Age -->
+        <div class="form-group">
+          <label for="age">Age</label>
+          <input type="number" id="age" placeholder="Enter age" required />
+        </div>
+      </div>
+
+      <div class="form-row">
+        <!-- Student Grade -->
+        <div class="form-group">
+          <label for="grade">Grade</label>
+          <input type="text" id="grade" placeholder="e.g. A, B, C" required />
+        </div>
+
+        <!-- Student Course -->
+        <div class="form-group">
+          <label for="course">Course</label>
+          <input type="text" id="course" placeholder="e.g. Math" required />
+        </div>
+      </div>
+
+      <!-- Buttons -->
+      <div class="button-row">
+        <button type="submit" id="submitBtn">Add Student</button>
+        <button type="button" id="cancelBtn" class="secondary" disabled>Cancel Edit</button>
+      </div>
+    </form>
+
+    <!-- Search (optional nice feature for students) -->
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="Search by name or course..." />
+    </div>
+
+    <!-- Student list section -->
+    <h2>Student List</h2>
+
+    <!-- Table to display students -->
+    <div class="table-wrap">
+      <table id="studentTable">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Grade</th>
+            <th>Course</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+
+        <!-- Table body (we fill this using JavaScript) -->
+        <tbody id="studentTbody">
+          <!-- Students will be shown here -->
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Small message area -->
+    <p id="message"></p>
+  </div>
+
+  <!-- Link external JS file -->
+  <script src="script.js"></script>
+</body>
+</html>
